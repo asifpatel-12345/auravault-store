@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AuraVault | Premium Lifestyle & Tech Store</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-gem"></i> Aura<span>Vault</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search premium items...">
+            <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="nav-actions">
+            <button id="themeToggle" class="icon-btn" title="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <div class="cart-btn" id="cartBtn">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span id="cartCount">0</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">✨ Exclusive Collection 2026</span>
+            <h1>Redefine Your Style with <span>AuraVault</span></h1>
+            <p>Curated streetwear, luxury accessories, and cutting-edge tech gadgets designed for the modern aesthetic.</p>
+            <a href="#products" class="cta-btn">Explore Vault <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <!-- Categories Filter -->
+    <section class="products-section" id="products">
+        <div class="section-title">
+            <h2>Featured Collections</h2>
+            <div class="categories">
+                <button class="cat-btn active" data-category="all">All Items</button>
+                <button class="cat-btn" data-category="fashion">Fashion</button>
+                <button class="cat-btn" data-category="gadgets">Gadgets</button>
+                <button class="cat-btn" data-category="accessories">Accessories</button>
+                <button class="cat-btn" data-category="footwear">Footwear</button>
+            </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-grid" id="productGrid">
+            <!-- Products loaded via JS -->
+        </div>
+    </section>
+
+    <!-- Side Cart Drawer -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>Your Cart (<span id="cartDrawerCount">0</span>)</h3>
+            <button id="closeCart"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items loaded via JS -->
+        </div>
+        <div class="cart-footer">
+            <div class="total-price">
+                <span>Total:</span>
+                <span id="cartTotal">₹0</span>
+            </div>
+            <button class="checkout-btn" onclick="alert('Proceeding to Secure Checkout!')">Checkout Now</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 <strong>AuraVault Store</strong>. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
